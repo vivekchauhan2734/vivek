@@ -291,7 +291,7 @@ h6 {
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 21px;
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
@@ -1726,4 +1726,9 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+.content-center {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;    /* Vertical centering */
 }

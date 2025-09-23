@@ -57,8 +57,8 @@
     })
     .then(response => {
       if( response.ok ) {
-        console.log("hello1");
-        console.log(response);
+        // console.log("hello1");
+        // console.log(response);
         return response.text();
       } else {
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 

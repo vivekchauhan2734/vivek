@@ -75,10 +75,10 @@
       //   thisForm.querySelector('.sent-message').classList.add('d-block');
       //   thisForm.reset(); 
       // } else {
-        // alert ("hello3");
-        // console.log(data);
-        // throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
-      }
+      //   alert ("hello3");
+      //   console.log(data);
+      //   throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
+      // }
     })
     .catch((error) => {
       displayError(thisForm, error);

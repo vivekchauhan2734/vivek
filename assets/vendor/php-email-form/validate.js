@@ -66,17 +66,18 @@
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      console.log("data in else");
-      console.log(data);
-      console.log(data.trim());
-      if (data.trim() == 'OK') {
-        console.log("hello2");
-        thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset(); 
-      } else {
-        alert ("hello3");
-        console.log(data);
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
+      thisForm.querySelector('.sent-message').classList.add('d-block');
+      // console.log("data in else");
+      // console.log(data);
+      // console.log(data.trim());
+      // if (data.trim() == 'OK') {
+      //   console.log("hello2");
+      //   thisForm.querySelector('.sent-message').classList.add('d-block');
+      //   thisForm.reset(); 
+      // } else {
+        // alert ("hello3");
+        // console.log(data);
+        // throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
       }
     })
     .catch((error) => {

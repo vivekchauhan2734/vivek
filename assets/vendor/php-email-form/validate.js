@@ -57,6 +57,7 @@
     })
     .then(response => {
       if( response.ok ) {
+        alert ("hello");
         return response.text();
       } else {
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
@@ -65,9 +66,12 @@
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
       if (data.trim() == 'OK') {
+        alert ("hello");
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
+        alert ("hello");
+        console.log(data);
         throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
       }
     })
